@@ -1,0 +1,37 @@
+.section-hero{
+    background-image: url("../img/bg/hero-bg.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 57px 0 510px 0;
+}
+
+.hero-title{
+    @include font-style(Roboto, 52px, 400, 1.1, 0.2px, center, $main-white);
+    max-width: 294px;
+    margin: 0 auto 27px auto;
+
+    @include desc(1579px){
+        @include font-style(Roboto, 80px, 500, 1.1, 0.2px, center, $main-white);
+        max-width: 729px;
+        margin: 0 auto 37px auto;
+    }
+}
+
+.hero-desc{
+    @include font-style(Roboto, 20px, 400, 1.5, 0.2px, center, $main-white);
+    max-width: 328px;
+    margin: 0 auto 67px auto;
+
+    @include desc(1579px){
+        max-width: 582px;
+    }
+}
+
+.hero-btn-wrap{
+    @include positioning(flex, column, _, center, 21px, _);
+
+    @include desc(1579px){
+        @include positioning(flex, row, center, center, 35px, _);
+    }
+}

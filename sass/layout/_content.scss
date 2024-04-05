@@ -1,0 +1,27 @@
+.section-content{
+    padding: 50px 0;
+
+    &-title{
+        @include font-style(Roboto, 52px, 400, 1.1, 0.2px, center, $main-white);
+        margin-bottom: 20px;
+    }
+
+    &-desc{
+        @include font-style(Roboto, 20px, 400, 1.1, 0.2px, center, $main-white);
+        max-width: 288px;
+        margin: 0 auto;
+
+        @include desc(1579px){
+            margin-bottom: 54px;
+            max-width: 571px
+        }
+    }
+
+    &-wrap{
+        @include positioning(flex, column, _, center, _, _);
+    
+        @include desc(1579px){
+            @include positioning(flex, row, center, _, 33px, _);
+        }
+    }
+}

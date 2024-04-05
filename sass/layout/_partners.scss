@@ -1,0 +1,29 @@
+.section-partners{
+    padding: 50px 0;
+
+    &-title{
+        @include font-style(Roboto, 52px, 400, 1.1, 0.2px, center, $main-white);
+        margin-bottom: 20px;
+    }
+
+    &-desc{
+        @include font-style(Roboto, 20px, 400, 1.1, 0.2px, center, $main-white);
+        max-width: 329px;
+        margin: 0 auto 60px auto;
+
+        @include desc(1579px){
+            max-width: 571px;
+        }
+    }
+}
+
+.partners-list{
+    @include positioning(flex, _, space-between, center, 55px 50px, wrap);
+    max-width: 390px;
+    margin: 0 auto 50px auto;
+
+    @include desc(1579px){
+        @include positioning(flex, _, _, center, 55px 50px, _);
+        max-width: 832px;
+    }
+}

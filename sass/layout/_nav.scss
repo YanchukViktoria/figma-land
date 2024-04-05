@@ -1,0 +1,16 @@
+.nav{
+    // display: none;
+
+    &-list{
+        @include positioning(flex, _, _, center, 41px, _);
+        margin: 0 136px 0 183px;
+
+        &-link{
+            @include font-style(Graphik, 16px, 500, 1.5, 0.2px, center, $main-white);
+        }
+    }
+
+    @include desc(1579px){
+        display: block;
+    }
+}

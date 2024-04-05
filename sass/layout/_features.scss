@@ -1,0 +1,65 @@
+.section-feautures{
+    padding: 62px 0;
+
+    &-title{
+        @include font-style(Roboto, 52px, 400, 1.1, 0.2px, center, $main-white);
+        margin-bottom: 27px;
+    }
+
+    &-desc{
+        @include font-style(Roboto, 20px, 400, 1.1, 0.2px, center, $main-white);
+        max-width: 411px;
+        margin: 0 auto 27px auto;
+
+        @include desc(1579px){
+            max-width: 582px;
+            margin-bottom: 80px;
+        }
+    }
+
+    @include desc(1579px){
+        padding: 162px 0;
+    }
+}
+
+.feautures-img{
+    width: 376px;
+    height: 406px;
+    margin: 0 auto 57px auto;
+
+    @include desc(1579px){
+        width: 752px;
+        height: 759px;
+        margin: 0;
+    }
+}
+
+.feautures-list{
+    @include positioning(flex, column, center, center, 45px, _);
+
+    &-wrap{
+        @include positioning(flex, _, _, center, 13px, _);
+        margin-bottom: 20px;
+    }
+
+    &-svg{
+        fill: $features-svg;
+    }
+
+    &-title{
+        @include font-style(Roboto, 20px, 500, 1.1, 0.2px, _, $main-white);
+        max-width: 153px
+
+    }
+
+    &-desc{
+        @include font-style(Roboto, 16px, 400, 1.5, 0.2px, _, $main-white);
+        max-width: 249px;
+    }
+}
+
+.feautures-wrap{
+    @include desc(1579px){
+        @include positioning(flex, _, center, center, 78px, _);
+    }
+}

@@ -1,0 +1,29 @@
+@mixin font-style($ff, $fz, $fw, $lh, $ls, $ta, $col){
+    font-family: $ff;
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: $lh;
+    letter-spacing: $ls;
+    text-align: $ta;
+    color: $col;
+}
+
+@mixin positioning($df, $fd, $jc, $al, $gp, $wrap){
+    display: $df;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $al;
+    gap: $gp;
+    flex-wrap: $wrap;
+}
+
+@mixin black-btn($pd){
+   @extend %black-btn;
+   padding: $pd;
+}
+
+@mixin desc($breakpoint){
+    @media screen and (min-width: $breakpoint){
+        @content;
+    }
+}

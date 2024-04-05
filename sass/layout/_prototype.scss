@@ -1,0 +1,49 @@
+.section-prototype{
+    background-color: rgba(30, 30, 30, 1);
+    background-image: url("../img/prototype/prototype-first.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    padding: 104px 0 489px 0;
+
+    &-title{
+        @include font-style(Roboto, 52px, 400, 1.1, 0.2px, center, $main-white);
+        max-width: 356px;
+
+        @include desc(1579px){
+            max-width: 479px;
+            text-align: left;
+            position: absolute;
+            left: 94px;
+            top: 61px;
+        }
+    }
+
+    @include desc(1579px){
+        background-image: none;
+        padding: 61px 0;
+        background-color: inherit;
+    }
+}
+
+.prototype-div{
+    @include positioning(flex, column, center, center, 37px, _);
+
+    @include desc(1579px){
+         @include positioning(flex, column, _, _, 37px, _);
+         
+         @include desc(1579px){
+            background-color: rgba(30, 30, 30, 1);
+            background-image: url("../img/prototype/prototype-sec.png");
+            background-position: right;
+            background-size: contain;
+            background-repeat: no-repeat;
+            max-width: 1219px;
+            border-radius: 33px;
+            margin: 0 auto;
+            padding: 78px 0;
+            position: relative;
+            height: 370px;
+        }
+    }
+}

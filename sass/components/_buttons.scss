@@ -1,0 +1,38 @@
+.log-btn{
+    @include black-btn(13px 40px);
+    background-color: inherit;
+    border: 1px solid $main-white;
+    margin-left: 92px;
+}
+
+.hero-btn{
+    @extend %black-btn;
+    background-color: $main-blue;
+    padding: 20px 40px;
+    max-width: 178px;
+
+    &:nth-child(2){
+        background-color: inherit;
+        border: 1px solid $main-white;
+    }
+}
+
+.gallery-btn, .section-partners-btn{
+    @include black-btn(13px 40px);
+    background-color: inherit;
+    border: 1px solid $main-white;
+    margin: 0 auto;
+    display: block;
+}
+
+.section-prototype-btn{
+    @include font-style(Roboto, 17px, 500, 1.4, 0.2px, _, $main-white);
+    background-color: $main-blue;
+    padding: 13px 67px;
+
+    @include desc(1579px){
+        position: absolute;
+        left: 94px;
+        bottom: 61px;
+    }
+}

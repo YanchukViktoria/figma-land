@@ -1,0 +1,59 @@
+.footer{
+    padding: 107px;
+
+    &-wrap{
+        @include positioning(flex, _, center, _, _, _);
+    }
+}
+
+.fingertype-title, .resources-title, .about-title{
+    @include font-style(Roboto, 20px, 500, 1.1, 0.1px, left, $main-white);
+    margin-bottom: 40px;
+}
+
+.footer-nav-list{
+    @include positioning(flex, column, center, _, 19px, _);
+    margin-bottom: 75px;
+
+    @include desc(1579px){
+        margin: 0 75px 0 0;
+    }
+
+    &-link{
+        @include font-style(Roboto, 16px, 500, 1.5, 0.1px, left, $main-white);
+    }
+}
+
+.contacts-list{
+    @include positioning(flex, column, center, _, 19px, _);
+    margin-bottom: 34px;
+
+    &-link{
+        @include font-style(Roboto, 16px, 500, 1.5, 0.1px, left, $main-white);
+        @include positioning(flex, _, _, center, 10px, _);
+    }
+
+    &-svg{
+        fill: currentColor;
+    }
+
+    @include desc(1579px){
+        margin-left: 199px;
+    }
+}
+
+.social-list{
+    @include positioning(flex, _, _, center, 24px, _);
+
+    &-link{
+        color: $main-white;
+    }
+
+    &-svg{
+        fill: currentColor;
+    }
+
+    @include desc(1579px){
+        margin-left: 199px;
+    }
+}   

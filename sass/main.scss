@@ -1,0 +1,24 @@
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/placeholders";
+
+@import "./base/body";
+@import "./base/container";
+@import "./base/reset";
+
+@import "./components/buttons";
+@import "./components/social";
+@import "./components/burger";
+
+@import "./pages/home";
+
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/nav";
+@import "./layout/content";
+@import "./layout/features";
+@import "./layout/gallery";
+@import "./layout/partners";
+@import "./layout/testimonial";
+@import "./layout/prototype";

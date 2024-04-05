@@ -1,0 +1,48 @@
+.section-gallery{
+    padding: 161px 0 50px 0;
+
+    &-title{
+        @include font-style(Roboto, 52px, 400, 1.1, 0.2px, center, $main-white);
+        margin-bottom: 20px;
+    }
+
+    &-desk{
+        @include font-style(Roboto, 20px, 400, 1.1, 0.2px, center, $main-white);
+        max-width: 363px;
+        margin: 0 auto 54px auto;
+    }   
+}
+
+.gallery-list{
+    @include positioning(flex, column, center, center, 33px, _);
+    margin-bottom: 44px;
+
+    &-item{
+
+        &:nth-child(n+5){
+            display: none;
+        }
+
+        @include desc(1579px){
+            display: block;
+
+            &:nth-child(n+5){
+                display: block;
+            }
+
+            &:nth-child(-n+4){
+                display: none;
+            }
+        }
+    }
+
+    &-img{
+        border-radius: 12px;
+    }
+
+    @include desc(1579px){
+        @include positioning(flex, row, center, center, 33px 44px, wrap);
+        max-width: 1200px;
+        margin: 0 auto 44px auto;
+    }
+}

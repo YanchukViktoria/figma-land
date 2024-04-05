@@ -1,0 +1,13 @@
+.burger-btn{
+    background-color: inherit;
+    color: $main-white;
+    margin-left: 16px;
+
+    @include desc(1579px){
+        display: none;
+    }
+}
+
+.burger-svg{
+    fill: currentColor;
+}
