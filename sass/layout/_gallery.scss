@@ -10,6 +10,10 @@
         @include font-style(Roboto, 20px, 400, 1.1, 0.2px, center, $main-white);
         max-width: 363px;
         margin: 0 auto 54px auto;
+
+        @include desc(1579px){
+            max-width: 571px;
+        }
     }   
 }
 
